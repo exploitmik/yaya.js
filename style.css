@@ -1,0 +1,58 @@
+@import 'yaya.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+figure {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+section {
+	padding: 105vh 0;
+}
+
+section:nth-child(even){
+	background: #f6f6f6;
+}
+
+ul {
+	margin-top: 1rem;
+}
+
+hgroup {
+	text-align: center;
+	margin: 3rem 0;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: #616161;
+}
+
+h2 {
+	color: #919191;
+}
+
+.main {
+	font-size: 5rem;
+}

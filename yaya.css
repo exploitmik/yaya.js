@@ -1,0 +1,67 @@
+[data-yaya] {
+	opacity: 0;
+	will-change: transform, opacity, clip-path;
+}
+
+@keyframes yayaToUp {
+	from { transform: translate3d(0, 300px, 0); }
+	to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+.yayaToUp {
+	animation: yayaToUp 1s ease-out forwards;
+}
+
+@keyframes yayaToDown {
+	from { transform: translate3d(0, -300px, 0); }
+	to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+.yayaToDown {
+	animation: yayaToDown 1s ease-out forwards;
+}
+
+@keyframes yayaToRight {
+	from { transform: translate3d(-300px, 0, 0); }
+	to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+.yayaToRight {
+	animation: yayaToRight 1s ease-out forwards;
+}
+
+@keyframes yayaToLeft {
+	from { transform: translate3d(300px, 0, 0); }
+	to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+.yayaToLeft {
+	animation: yayaToLeft 1s ease-out forwards;
+}
+
+@keyframes yayaClipToRight {
+	from { -webkit-clip-path: polygon(0 0, 54% 0, 36% 100%, 0% 100%); clip-path: polygon(0 0, 54% 0, 36% 100%, 0% 100%); }
+	to { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); opacity: 1; }
+}
+
+.yayaClipToRight {
+	animation: yayaClipToRight 1s ease-out forwards;
+}
+
+@keyframes yayaClipToLeft {
+	from { -webkit-clip-path: polygon(36% 1%, 100% 0, 100% 100%, 54% 100%); clip-path: polygon(36% 0, 100% 0, 100% 100%, 54% 100%); }
+	to { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); opacity: 1; }
+}
+
+.yayaClipToLeft {
+	animation: yayaClipToLeft 1s ease-out forwards;
+}
+
+@keyframes yayaClipCircle {
+	from { -webkit-clip-path: circle(50% at 2% 3%); clip-path: circle(50% at 2% 3%); }
+	to { -webkit-clip-path: circle(140% at 2% 3%); clip-path: circle(140% at 2% 3%); opacity: 1; }
+}
+
+.yayaClipCircle {
+	animation: yayaClipCircle 1s ease-out forwards;
+}
