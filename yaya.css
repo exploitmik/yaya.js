@@ -1,6 +1,6 @@
 [data-yaya] {
 	opacity: 0;
-	will-change: transform, opacity, clip-path;
+	will-change: transform, opacity, clip-path, filter;
 }
 
 @keyframes yayaToUp {
@@ -64,4 +64,13 @@
 
 .yayaClipCircle {
 	animation: yayaClipCircle 1s ease-out forwards;
+}
+
+@keyframes yayaBlurOut {
+	from { filter: blur(30px); }
+	to { filter: blur(0); opacity: 1; }
+}
+
+.yayaBlurOut {
+	animation: yayaBlurOut 1s ease-out forwards;
 }

@@ -10,6 +10,7 @@ Add attribute "data-yaya" in element for anime. Available types:
 * yayaToDown
 * yayaToRight
 * yayaToLeft
+* yayaBlurOut
 
 Other attributes availables:
 * data-yaya-duration
